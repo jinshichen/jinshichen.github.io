@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jinshi Chen — research in nearshore wave dynamics, air–sea interaction, coastal resilience and hazards, and marine renewable energy">
+  <title>Jinshi Chen | Ocean and Coastal Research</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .research-intro > .research-lede {
+      grid-column: 1 / -1;
+      width: 100%;
+      max-width: none;
+      margin-left: 0;
+      padding-left: 0;
+      text-indent: 0;
+      font-size: clamp(1.4rem, 2.4vw, 2.3rem);
+    }
+
+    .publication-groups {
+      display: block;
+      margin-left: 0;
+    }
+
+    .gallery-grid {
+      grid-auto-rows: clamp(300px, 32vw, 420px);
+    }
+
+    .gallery-grid img {
+      object-position: center;
+    }
+
+    .research-nav {
+      border-bottom: 0;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .research-nav > a:nth-child(-n + 4) {
+      border-bottom: 1px solid rgb(255 255 255 / 22%);
+    }
+
+    .research-nav > a:nth-child(4) {
+      border-right: 1px solid rgb(255 255 255 / 22%);
+    }
+
+    .research-nav > .research-nav-wind {
+      grid-column: 1;
+      border: 1px solid rgb(255 255 255 / 22%);
+    }
+
+    .publication-primary {
+      display: grid;
+      gap: clamp(1.75rem, 3vw, 3rem);
+    }
+
+    .publication-primary > article > h3,
+    .presentation-columns > article > h3 {
+      text-align: center;
+    }
+
+    .publication-primary > article,
+    .presentation-columns > article {
+      display: block;
+    }
+
+    .publication-primary > article > h3,
+    .presentation-columns > article > h3 {
+      margin-bottom: 1.5rem;
+    }
+
+    .presentation-columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(2rem, 5vw, 5rem);
+      margin-top: clamp(2.5rem, 5vw, 4.5rem);
+      align-items: start;
+    }
+
+    @media (max-width: 760px) {
+      .presentation-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-auto-rows: 66vw;
+      }
+
+      .research-nav {
+        grid-template-columns: 1fr;
+      }
+
+      .research-nav > a:nth-child(-n + 4) {
+        border-left: 1px solid rgb(255 255 255 / 22%);
+        border-right: 1px solid rgb(255 255 255 / 22%);
+        border-top: 0;
+      }
+
+      .research-nav > a:first-child {
+        border-top: 1px solid rgb(255 255 255 / 22%);
+      }
+
+      .research-nav > .research-nav-wind {
+        margin-top: 18px;
+      }
+    }
+
+    @media (min-width: 901px) {
+      .about-grid { grid-template-columns: minmax(300px, 0.78fr) 1.55fr; }
+      .profile-card p:first-of-type { white-space: nowrap; }
+    }
+  </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4F6F3TL4S5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4F6F3TL4S5');
+</script>
+<body>
+<main id="home">
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Jinshi Chen — home">Jinshi Chen</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#research">Research</a>
+      <a href="#publications">Publications</a><a href="#gallery">Gallery</a>
+      <a href="Jinshi-Chen-CV.pdf" target="_blank" rel="noreferrer">CV</a>
+    </nav>
+  </header>
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <h1 id="hero-title">Jinshi Chen</h1>
+      <p class="hero-role">Distinguished Postdoctoral Fellow</p>
+      <div class="affiliation"><p>Andlinger Center for Energy and the Environment</p><p>Princeton University</p></div>
+      <div class="hero-rule"></div>
+      <p class="hero-focus">Nearshore Wave Dynamics <span aria-hidden="true">·</span> Air–Sea Interaction <span aria-hidden="true">·</span> Coastal Resilience &amp; Hazard <span aria-hidden="true">·</span> Marine Renewable Energy</p>
+      <div class="hero-actions"><a class="button button-primary" href="#research">Research</a><a class="button button-text" href="Jinshi-Chen-CV.pdf" target="_blank" rel="noreferrer">CV <span aria-hidden="true">→</span></a></div>
+    </div>
+    <figure class="hero-image"><img src="images/header.jpg" alt="Ocean waves meeting the shoreline" fetchpriority="high"></figure>
+  </section>
+
+  <section class="section about-section" id="about" aria-labelledby="about-title">
+    <div class="section-heading"><h2 id="about-title">About&nbsp;Me</h2></div>
+    <div class="about-grid">
+      <aside class="profile-card"><img src="images/pic01.jpg" alt="Portrait of Jinshi Chen" loading="lazy" decoding="async"><div><h3>Jinshi Chen</h3><p>Ph.D. Physical Oceanography, MIT/WHOI (2019-2025)</p><p>B.A. Physics, Cornell University (2015-2019)</p></div></aside>
+      <article class="prose about-copy">
+        <p id="wind">I am a <a href="https://acee.princeton.edu/postdoc-program/" target="_blank" rel="noreferrer">Distinguished Postdoctoral Fellow </a> at the <a href="https://acee.princeton.edu/" target="_blank" rel="noreferrer">Andlinger Center for Energy and the Environment </a> at <a href="https://princeton.edu/" target="_blank" rel="noreferrer">Princeton University</a>. At Princeton, I work with <a href="https://mae.princeton.edu/people/luc-deike" target="_blank" rel="noreferrer">Prof. Luc Deike</a> and <a href="https://mae.princeton.edu/people/michael-e-mueller" target="_blank" rel="noreferrer">Prof. Michael Mueller</a> to study misaligned wind–wave interactions using two-phase Direct Numerical Simulations (DNS) conducted with <a href="https://basilisk.fr/" target="_blank" rel="noreferrer"><em>Basilisk</em></a>.</p>
+        <p>I earned my Ph.D. in Physical Oceanography through the <a href="https://mit.whoi.edu/" target="_blank" rel="noreferrer">MIT-WHOI Joint Program</a>. Advised by <a href="https://www2.whoi.edu/staff/braubenheimer2/" target="_blank" rel="noreferrer">Dr. Britt Raubenheimer</a> and <a href="https://www2.whoi.edu/staff/elgar/" target="_blank" rel="noreferrer">Dr. Steve Elgar</a>, I studied nearshore hydrodynamics, including breaking-wave-driven rollers, turbulence, undertow, and eddies. My research combined numerical modeling using <a href="https://www.openfoam.com/" target="_blank" rel="noreferrer"><em>OpenFOAM</em></a> and <a href="https://dedalus-project.org/" target="_blank" rel="noreferrer"><em>Dedalus</em></a> with in situ observations.</p>
+        <p>I earned my bachelor's degree in physics from <a href="https://physics.cornell.edu/" target="_blank" rel="noreferrer">Cornell University</a>, where I focused on theoretical fluid dynamics, numerical modeling, and applied mathematics.</p>
+        <p>I am deeply committed to teaching and outreach. I have completed the <a href="http://phystec.physics.cornell.edu/seminar" target="_blank" rel="noreferrer">Cornell's Teaching and Learning Physics</a> course and <a href="https://tll.mit.edu/programming/grad-student-programming/teaching-certificate-pathways/grad-teaching-development-tracks/" target="_blank" rel="noreferrer">MIT Graduate Teaching Development Track</a> to deepen my understanding of teaching theory and practice. I have also designed and taught math and nearshore dynamics courses at WHOI and Princeton. In support of outreach, I am a member of the <a href="https://www.spsnational.org/" target="_blank" rel="noreferrer">Society of Physics Students</a> and have organized physics demonstrations and given oceanography seminars at middle schools. </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="research-intro" id="research" aria-labelledby="research-title">
+    <div class="section-heading light"><h2 id="research-title">Research</h2></div>
+<p class="research-lede">Although coastal waters and surfzones cover only about 7% of the ocean, they form the critical boundary between the ocean and human society. In the United States, shore-adjacent counties are home to approximately 30% of the population and generate about 35% of the nation’s GDP.</p>
+
+<p class="research-lede">These environments are shaped by complex, multiphase and multiscale processes, including wave breaking, sediment and biota transport, and misaligned wind–wave interactions.</p>
+
+<p class="research-lede">Understanding these processes is essential for assessing coastal hazards, beach erosion, and pollutant dispersal, as well as for advancing marine renewable energy.</p>
+    <figure class="research-overview">
+      <div class="research-overview-image">
+        <img src="images/coastal-processes-schematic.png" alt="Schematic coastal cross-section showing offshore wind, a floating wind turbine, a wave energy converter, breaking waves, a roller, turbulence, undertow, surfzone eddies, bathymetry, beach houses, and beach visitors" loading="lazy" decoding="async">
+        <a class="figure-hotspot hotspot-wind" href="#wind-wave" aria-label="Wind: jump to Misaligned wind–wave interaction" title="Wind — view related research"></a>
+        <a class="figure-hotspot hotspot-roller" href="#roller" aria-label="Roller: jump to Surfzone roller transformation" title="Roller — view related research"></a>
+        <a class="figure-hotspot hotspot-turbulence" href="#turbulence" aria-label="Turbulence: jump to Surfzone turbulence anisotropy" title="Turbulence — view related research"></a>
+        <a class="figure-hotspot hotspot-undertow" href="#undertow" aria-label="Undertow: jump to Vertical structure of undertow over sandbar" title="Undertow — view related research"></a>
+        <a class="figure-hotspot hotspot-eddies" href="#eddy" aria-label="Surfzone eddies: jump to Cross-shore eddy advection" title="Surfzone eddies — view related research"></a>
+      </div>
+      <nav class="research-mobile-links" aria-label="Research figure topics">
+        <p>Explore the figure</p>
+        <a href="#wind-wave">Wind</a>
+        <a href="#roller">Roller</a>
+        <a href="#turbulence">Turbulence</a>
+        <a href="#undertow">Undertow</a>
+        <a href="#eddy">Surfzone eddies</a>
+      </nav>
+    </figure>
+<p class="research-lede">I am broadly interested in understanding multiphase physical processes in coastal and nearshore environments and their implications for coastal community safety and well-being, as well as for marine renewable energy. My research combines high-fidelity modeling, field observations, laboratory experiments, and theoretical analysis.</p>
+
+    <div class="research-nav" aria-label="Research topics"><a href="#roller"><span>01</span>Surfzone roller transformation</a><a href="#turbulence"><span>02</span>Surfzone turbulence anisotropy</a><a href="#undertow"><span>03</span>Vertical structure of undertow</a><a href="#eddy"><span>04</span>Cross-shore eddy advection</a><a class="research-nav-wind" href="#wind-wave"><span>05</span>Misaligned wind–wave interaction</a></div>
+  </section>
+
+  <section class="research-list" aria-label="Research areas">
+    <article class="research-item" id="roller">
+      <header class="research-item-heading"><span>01</span><h3>Surfzone roller transformation</h3></header>
+      <div class="prose research-copy"><p>When waves break, the wave roller, an aerated region on the front face of a spilling wave, redistributes momentum into mean cross- and alongshore currents and wave setup (breaking wave induced mean water level increase), causing these responses to lag behind wave-energy dissipation. Because rollers are transient and highly unsteady, their properties are difficult to measure directly in laboratory or field settings, and existing parameterizations of roller shape and energy are largely empirical.</p>
+
+<p>My research then used the two-phase (air & water) Reynolds-averaged Navier–Stokes (RANS) model <em>waves2Foam</em>, together with in situ pressure and current measurements, to directly quantify the cross-shore evolution of wave rollers over barred and unbarred beaches under different offshore wave conditions and to evaluate existing parameterizations.
+</p></div>
+      <div class="research-images"><figure><img src="images/Breaking.jpg" alt="A breaking wave roller viewed from above" loading="lazy" decoding="async"><figcaption>A breaking wave roller crossing a mounted sensor (marked by colored fiberglass pole) observed near Duck, NC during our field observation in 2021 using a drone.</figcaption></figure><figure><img src="images/Breaking_model.png" alt="Numerical model of a breaking wave roller" loading="lazy" decoding="async"><figcaption>A snapshot of a cross-shore vertical view of a breaking wave roller simulated in our two-phase model in OpenFOAM where blue indicates water.</figcaption></figure></div>
+      <p class="related-publication"><span>Related publication</span>Chen, J., Raubenheimer, B., &amp; Elgar, S. (2024) <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023JC020413" target="_blank" rel="noreferrer">Wave and Roller Transformation over Barred Bathymetry </a>, <em>Journal of Geophysical Research: Oceans</em>. 129, e2023JC020413</p>
+    </article>
+    <article class="research-item" id="turbulence">
+      <header class="research-item-heading"><span>02</span><h3>Surfzone turbulence anisotropy</h3></header>
+      <div class="prose research-copy"><p>Turbulence is ubiquitous in the ocean, and it is especially strong in surfzone due to breaking waves. Breaking-wave turbulence is responsible for mixing in the water column, transporting momentum cross-shore and downward, and dissipating wave energy. Accurately estimating turbulence strength and structure in surfzone is critical for estimating vertical structure of undertow and cross-shore wave transformation. Yet, two-equation RANS model relates turbulence structure with mean current stress, assuming maximum turbulence energy flux across length scales, leading to erroneous turbulent estimate in the model and subsequently unsatisfactory estimation of undertow. </p>
+<p> For my research, I use in-situ field observation to directly estimate surfzone turbulence anisotropy (directional preference of turbulence Reynolds stresses) and relate that to bulk wave and mean current.</p></div>
+      <div class="research-images"><figure><img src="images/turbulence_sketch.png" alt="Schematic turbulence fluctuation ellipsoids" loading="lazy" decoding="async"><figcaption>Schematic plots of turbulence fluctuation ellipsoid for isotropic (top) and anisotropic (bottom) states.</figcaption></figure><figure><img src="images/turbulence_setup.png" alt="Two vertically stacked Acoustic Doppler Velocimeters" loading="lazy" decoding="async"><figcaption>An assembly of two vertically stacked Acoustic Doppler Velocimeters (ADVs) for measuring surfzone turbulence during our field observation in 2023.</figcaption></figure></div>
+      <p class="related-publication"><span>Related publication</span>Chen, J., Raubenheimer, B., & Elgar, S. (2025). <em> <a href="https://journals.ametsoc.org/view/journals/phoc/55/9/JPO-D-24-0177.1.xml" target="_blank" rel="noreferrer">Anisotropy of surfzone turbulence</a>. Journal of Physical Oceanography</em>, 55(9), 1435-1450.</p>
+    </article>
+    <article class="research-item" id="undertow"><header class="research-item-heading"><span>03</span><h3>Vertical structure of undertow</h3></header><div class="prose research-copy"><p> In the surf zone, undertow, an offshore-directed mean current below the wave trough, balances the onshore mass transport carried by breaking waves and rollers. Understanding the vertical structure of undertow is critical to accurately estimate the water column mixing, bottom shear stress and sediment transport rate, which has important implications for beach erosion and the transport of land-based pollutants and biota. However, the depth-dependent momentum forcing that controls undertow remains poorly understood. </p>
+
+    <p>My research uses the aforementioned two-phase RANS model to quantify the vertical structure of undertow and its forcing terms and to develop parameterizations based on bulk wave and bathymetric properties.</p></div>
+    <p class="related-publication"><span>Related publication</span>Chen, J., Raubenheimer, B., & Elgar, S. <em> Depth-resolved Surfzone Wave and Roller Transformation. In revision</em></p>
+</article>
+
+    <article class="research-item" id="eddy"><header class="research-item-heading"><span>04</span><h3>Cross-shore eddy advection</h3></header><div class="prose research-copy"><p>Surfzone eddies can transport sediment and biota offshore across the surfzone. One proposed generation mechanism is short-crested wave breaking, caused by directional wave spreading or alongshore-varying bathymetry. Uneven breaking produces strong forcing beneath each crest and weaker forcing between crest ends, generating vortex dipoles at the crest tips. These vortices may merge through an inverse cascade into larger eddies, with scales of approximately 10–100 m, that can propagate toward the inner shelf. However, the processes governing their cross-shore transport remain poorly quantified.</p>
+
+<p>My research uses a simplified process model implemented in <a href="https://dedalus-project.org/" target="_blank" rel="noreferrer"><em>Dedalus</em></a> to derive dimensionless relationships describing eddy advection over a slope as a function of slope and wave properties.</p></div></article>
+
+    <article class="research-item" id="wind-wave">
+      <header class="research-item-heading"><span>05</span><h3>Misaligned wind–wave interaction</h3></header>
+      <div class="prose research-copy"><p>Winds and ocean surface waves often travel in different directions, particularly during storms with rapidly changing winds and in coastal regions where bathymetry influences wave propagation. Understanding these misaligned interactions is essential for predicting wind profiles, improving wave-forecasting models, and optimizing offshore wind-turbine performance.</p>
+
+<p>My research employs two-phase direct numerical simulations (DNS) to resolve misaligned wind–wave interactions and develop physical frameworks and parameterizations applicable across a range of wind and wave conditions.</p></div>
+    </article>
+  </section>
+
+  <section class="section publications-section" id="publications" aria-labelledby="publications-title">
+    <div class="section-heading"><h2 id="publications-title">Publications</h2></div>
+    <div class="publication-groups">
+      <div class="publication-primary">
+        <article><h3>Peer-reviewed Journal Articles</h3><ol reversed start="2"><li>Chen, J., Raubenheimer, B., & Elgar, S. (2025). <em> <a href="https://journals.ametsoc.org/view/journals/phoc/55/9/JPO-D-24-0177.1.xml" target="_blank" rel="noreferrer">Anisotropy of surfzone turbulence</a>. Journal of Physical Oceanography</em>, 55(9), 1435-1450.</li><li>Chen, J., Raubenheimer, B., &amp; Elgar, S. (2024) <em><a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023JC020413" target="_blank" rel="noreferrer">Wave and Roller Transformation over Barred Bathymetry</a>, Journal of Geophysical Research: Oceans</em>. 129, e2023JC020413</li></ol></article>
+        <article><h3>Under review</h3><ol><li>Chen, J., Raubenheimer, B., & Elgar, S. <em> Depth-resolved Surfzone Wave and Roller Transformation. Journal of Geophysical Research: Oceans</em></li></ol></article>
+      </div>
+      <div class="presentation-columns">
+        <article class="seminar-list"><h3>Invited Seminars</h3><ol reversed start="5"><li><em>A Peek into Misaligned Oceanic Wind–Wave Interactions with High-Fidelity Models</em>, New Light: Rising Stars in Energy and the Environment, Princeton University, Jun. 2026.</li><li><em>Cross-shore Transformation of Breaking Random Waves in the Surfzone</em>, Shanghai Jiao Tong University, Apr. 2025.</li><li><em>Cross-Surfzone Transport Dynamics by Random Breaking Waves</em>, Sack Lunch Seminar, MIT, Dec. 2024.</li><li><em>Cross-Surfzone Transport Dynamics by Random Breaking Waves</em>, Center for Coastal Studies Seminar, Scripps Institution of Oceanography, Oct. 2024.</li><li><em>Simulations and Observations of Surfzone Waves and Undertow</em>, Coastal Ocean Fluid Dynamics Laboratory (COFDL) Seminar, WHOI, Aug. 2021.</li></ol></article>
+        <article class="conference-list"><h3>Conferences</h3><ol reversed start="7"><li>Chen, J., Scapin, N., & Deike, L. <em>A DNS Study of Momentum and Energy Exchange in Misaligned Wind-Wave Conditions,</em> 2026 International Ocean Vector Winds Science Team Meeting,</li><li>Chen, J., Scapin, N., Wu, J., & Deike, L. <em>Momentum and Energy Exchange in Misaligned Wind-Wave Conditions, </em>2025 Annual Meeting of the APS Division of Fluid Dynamics.</li><li>Chen, J., Raubenheimer, B., Elgar, S., &amp; Tsai, B. <em>Simulations of Depth Resolved Cross-shore Momentum Transfer in the Surfzone</em>, 2024 AGU Fall Meeting</li><li>Chen, J., Trowbridge, J., Raubenheimer, B., &amp; Elgar, S. <em>Observations of Surfzone Turbulence Anisotropy</em>, 2024 Ocean Sciences Meeting</li><li>Chen, J., Raubenheimer, B., &amp; Elgar, S. <em>Tidal Effects of Cross-Shore Roller Transformation Over Barred Bathymetries</em>, 2023 Young Coastal Scientists and Engineers Conference-Americas</li><li>Chen, J., Raubenheimer, B., &amp; Elgar, S. <em>Cross-shore Roller Transformation over Barred Bathymetries</em>, 2022 AGU Fall Meeting</li><li>Chen, J., Raubenheimer, B., &amp; Elgar, S. <em>Surfzone Setup and Alongshore Currents During Hurricane Matthew</em>, 2018 Annual Meeting of the APS Division of Fluid Dynamics</li></ol></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="gallery" aria-labelledby="gallery-title"><div class="section-heading light"><h2 id="gallery-title">Gallery</h2></div><div class="gallery-grid"><figure><img src="images/field_1.JPG" alt="Divers installing oceanographic instruments underwater in the surfzone" loading="lazy" decoding="async"></figure><figure><img src="images/field_2.JPG" alt="A diver entering a beach field site with an offshore instrument tower" loading="lazy" decoding="async"></figure><figure><img src="images/field_3.JPG" alt="An oceanographic instrument package being deployed from a research vessel" loading="lazy" decoding="async"></figure><figure><img src="images/layer.jpg" alt="Layered water and ice textures" loading="lazy" decoding="async"></figure><figure><img src="images/field_4.JPG" alt="Oceanographic instruments recovered after a coastal field deployment" loading="lazy" decoding="async"></figure><figure><img src="images/mirror.JPG" alt="Sunset reflected in a calm shoreline pool" loading="lazy" decoding="async"></figure></div></section>
+
+  <footer class="site-footer" id="contact">
+    <div><p class="eyebrow">Contact me</p><h2>Jinshi Chen</h2></div>
+    <address><p>Andlinger Center for Energy and the Environment</p><p>86 Olden St., Princeton, NJ 08540</p><a href="mailto:jinshic@princeton.edu">jinshic@princeton.edu</a></address>
+    <div class="social-links"><a href="https://www.researchgate.net/profile/Jinshi-Chen" target="_blank" rel="noreferrer">ResearchGate</a><a href="https://www.linkedin.com/in/jinshichen/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://orcid.org/0009-0007-6453-5265" target="_blank" rel="noreferrer">ORCID</a></div>
+    <div class="footer-bottom"><p>© Jinshi Chen. All rights reserved.</p><p>Design: <a href="http://html5up.net" target="_blank" rel="noreferrer">HTML5 UP</a></p><a href="#home">Back to top ↑</a></div>
+  </footer>
+</main>
+</body>
+</html>
